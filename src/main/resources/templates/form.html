@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Make an Social media post</title>
+</head>
+<h1>Make a socical media post</h1>
+<form action="/create-post">
+    <p>
+        <label for="name">Write the title on your new post:</label>
+        <input type="text" id="name" placeholder="Name" required>
+    </p>
+
+    <p>
+        <label for="content">Write something funny:</label>
+        <input type="text" id="content" placeholder="Content" required>
+    </p>
+
+    <p>
+        <label for="date">Date:</label>
+        <input type="date" id="date" placeholder="dato">
+    </p>
+
+    <p>
+        <label for="Private">Private</label>
+        <input type="radio" id="Public" name="Public/Private" value="Public">
+        <label for="Public">Public</label>
+        <input type="radio" id="Private" name="Public/Private" value="Private">
+    </p>
+
+    <p>
+        <label for="favoritefood">Write your favorite food:</label>
+        <input type="text" id="favoritefood" placeholder="Your favorite food">
+    </p>
+
+    <label for="Favoritecolor">Choose your favorite color</label>
+    <select name="Favoritecolor" id="Favoritecolor">
+        <option value="blue">blue</option>
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="black">black</option>
+    </select>
+
+    <input type="Submit" value="Submit">
+
+</form>
+
+
+</body>
+</html>
